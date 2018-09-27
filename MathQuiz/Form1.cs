@@ -98,6 +98,12 @@ namespace MathQuiz
             else if (timeLeft > 0){
                 timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
+
+                //added this nested if for hightlighting the time left when close to finish
+                if (timeLeft < 10)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
             }
 
 
@@ -113,6 +119,7 @@ namespace MathQuiz
                 sumMult.Value = multVal1 * multVal2;
                 sumDiv.Value = divVal2 / divVal1;
                 btnStart.Enabled = true;
+                timeLabel.BackColor = Color.Empty; // reset the color
             }
         }
 

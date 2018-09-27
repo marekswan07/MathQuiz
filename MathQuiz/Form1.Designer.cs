@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timeLabel = new System.Windows.Forms.Label();
             this.lblTimeLeft = new System.Windows.Forms.Label();
             this.addLeftLabel = new System.Windows.Forms.Label();
@@ -336,6 +337,7 @@
             this.Controls.Add(this.lblTimeLeft);
             this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Marek Swan Math quiz";
